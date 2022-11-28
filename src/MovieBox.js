@@ -37,7 +37,6 @@ const MovieBox = ({title, original_language, vote_average, poster_path, release_
                     </Modal>
                 </div>
             </div>
-
         </div>
     )
 }
