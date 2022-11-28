@@ -1,7 +1,7 @@
 
 import { useEffect, useState } from 'react';
 import './App.css';
-import MovieBox from './MovieBox'; 
+import MovieBox from './components/MovieBox'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap';
 
@@ -44,10 +44,9 @@ function App() {
 
   return (
     <>
-      <Navbar bg="light" expand="lg" variant="light">
+      <Navbar bg="light" expand="xl" variant="light">
         <Container fluid>
           <Navbar.Brand href="./home"> MOVIES FOR YOU </Navbar.Brand>
-          <Navbar.Brand href="./home"> Most Popular movies </Navbar.Brand>
           <Navbar.Toggle aria-controls='navbarScroll'></Navbar.Toggle>
             <Navbar.Collapse id='navbarScroll'>
               <Nav 
@@ -66,7 +65,7 @@ function App() {
                   onChange={changeHandler}>
                   </FormControl> 
                   <Button 
-                  variant="secondary" 
+                  variant="dark" 
                   type="submit"> Search 
                   </Button>
                 </Form>
